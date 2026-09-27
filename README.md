@@ -1,5 +1,10 @@
 ﻿# Smart City Traffic - Deploy (Part 2 Visuals + Part 3 ML API)
 
+**Live demo:** https://traffic-streamlit.onrender.com
+**API docs:** https://traffic-api-tpmh.onrender.com/docs
+
+> Free tier cold-starts in ~30-50s after 15 min idle. First request may be slow.
+
 Public deployment of the **Metro Interstate Traffic Volume** capstone
 (2012-2018, 40,575 cleaned rows).
 
@@ -66,3 +71,4 @@ POST /predict
 //      "congestion_predicted": true,
 //      "risk_level": "HIGH" }
 ```
+
