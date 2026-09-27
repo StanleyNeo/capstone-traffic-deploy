@@ -5,6 +5,10 @@
 
 > Free tier cold-starts in ~30-50s after 15 min idle. First request may be slow.
 
+## Screenshot
+
+![Predict tab - weekday 17:00 Clear -> HIGH congestion](docs/screenshot-predict.png)
+
 Public deployment of the **Metro Interstate Traffic Volume** capstone
 (2012-2018, 40,575 cleaned rows).
 
@@ -71,4 +75,5 @@ POST /predict
 //      "congestion_predicted": true,
 //      "risk_level": "HIGH" }
 ```
+
 
