@@ -102,7 +102,7 @@ def predict(inp: TrafficInput):
     if regressor is None or classifier is None:
         raise HTTPException(503, detail="Models not loaded")
     X = build_feature_vector(inp)
-    X = X[list(regressor.feature_names_in_)]
+    X = X[FEATURES]  # columns already in training order
     volume = float(regressor.predict(X)[0])
     proba = float(classifier.predict_proba(X)[0, 1])
     risk = "HIGH" if proba >= 0.75 else "MODERATE" if proba >= 0.4 else "LOW"
@@ -116,3 +116,4 @@ def predict(inp: TrafficInput):
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+
