@@ -1,7 +1,10 @@
-﻿# Smart City Traffic - Deploy (Part 2 Visuals + Part 3 ML API)
+﻿# Capstone SK Traffic — Deploy
 
-**Live demo:** https://traffic-streamlit.onrender.com
-**API docs:** https://traffic-api-tpmh.onrender.com/docs
+**Live demo:** https://aievershine.com/traffic
+
+**Architecture:** Cloudflare Edge → Tunnel (Acer) → Streamlit :8501 → FastAPI :8000
+
+**Status:** Migrated off Render free tier on 2026-09-29. Tunnel runs as Windows service `Cloudflared
 
 > Free tier cold-starts in ~30-50s after 15 min idle. First request may be slow.
 
