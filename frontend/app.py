@@ -25,11 +25,8 @@ MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
 st.set_page_config(page_title="Smart City Traffic — Capstone",
                    page_icon="🚦", layout="wide")
 
-st.info("⏳ **First visit after ~15 min idle takes 30–50 s to wake up** "
-        "(free-tier hosting). Refresh once and it's instant after that.")
-
 st.title("🚦 Smart City Traffic — Metro Interstate")
-st.caption("Part 2 (visuals) + Part 3 (ML predictions) served live from Render.")
+st.caption("Part 2 (visuals) + Part 3 (ML predictions) served live from Cloudflare Tunnel.")
 
 # ---------- backend health ----------
 with st.sidebar:
